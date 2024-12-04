@@ -25,11 +25,14 @@ To install the dependencies, run the following command <br> `npm install`
 To start the development server, run <br>
 `npm run dev`
 
-To build server for production (import for minifying, compression, etc.) run <br>
+To build server for production (import for minifying, compression, etc.), run <br>
 `npm run build`
 
-To view the website run <br>
+To view the website, run <br>
 `npm run serve`
+
+To deploy to github, run <br>
+`npm run deploy`
 
 ## Linting and formatting
 
