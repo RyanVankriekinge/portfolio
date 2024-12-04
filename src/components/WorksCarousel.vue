@@ -2,8 +2,10 @@
 import 'vue3-carousel/dist/carousel.css';
 import { Carousel, Slide, Navigation } from 'vue3-carousel';
 import prototypeFlashQuiz from '../assets/img/prototypeFlashQuiz.png';
-import prototypeSharedBites from '../assets/img/prototypeSharedBites.jpeg'
+import prototypeSharedBites from '../assets/img/prototypeSharedBites.jpeg';
+import { useRouter } from 'vue-router';
 
+const router = useRouter();
 
 const items = [
  {
@@ -41,12 +43,16 @@ const config = {
   wrapAround: true,
   centerMode: true,
 };
+
+const navigateToItem = (route) => {
+  router.push(route);
+};
 </script>
 
 <template>
   <Carousel v-bind="config">
     <Slide v-for="(item, index) in items" :key="index">
-      <div class="carousel__item">
+      <div class="carousel__item" @click="navigateToItem(item.route)">
         <div class="media">
           <img v-if="item.type === 'image'" :src="item.media" :alt="item.title" />
           <video v-else-if="item.type === 'video'" :src="item.media" controls />
