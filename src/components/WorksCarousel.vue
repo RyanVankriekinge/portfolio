@@ -2,32 +2,33 @@
 import 'vue3-carousel/dist/carousel.css';
 import { Carousel, Slide, Navigation } from 'vue3-carousel';
 import prototypeFlashQuiz from '../assets/img/prototypeFlashQuiz.png';
+import prototypeSharedBites from '../assets/img/prototypeSharedBites.jpeg'
 
 
 const items = [
  {
     type: 'image',
     media: prototypeFlashQuiz,
-    title: 'Flashquiz',
-    description: 'An app that allows users to host or play quizzes instantly.',
+    title: 'FlashQuiz',
+    description: 'An app that allows users to host or play pre-made quizzes instantly.',
+  },
+  {
+    type: 'image',
+    media: prototypeSharedBites,
+    title: 'SharedBites',
+    description: 'An app that allows users to host or play pre-made quizzes instantly.',
   },
   {
     type: 'image',
     media: prototypeFlashQuiz,
-    title: 'Flashquiz',
-    description: 'An app that allows users to host or play quizzes instantly.',
+    title: 'GSAP animations',
+    description: 'An app that allows users to host or play pre-made quizzes instantly.',
   },
   {
     type: 'image',
     media: prototypeFlashQuiz,
-    title: 'Flashquiz',
-    description: 'An app that allows users to host or play quizzes instantly.',
-  },
-  {
-    type: 'image',
-    media: prototypeFlashQuiz,
-    title: 'Flashquiz',
-    description: 'An app that allows users to host or play quizzes instantly.',
+    title: 'Page speed improvement',
+    description: 'An app that allows users to host or play pre-made quizzes instantly.',
   },
 ];
 
