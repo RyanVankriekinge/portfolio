@@ -97,3 +97,6 @@ To fix formatting issues, run: <br>
 
 18. **Preloading**  
     Used [mdn web docs: rel=preload](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/preload) to preload fonts in index.html
+
+19. **Scroll to top on router change in Vue**  
+    Used [ChatGPT](https://chatgpt.com/share/6750579c-e654-8002-9ffe-f97d0db8329c) to scroll to the top of the page when a router change is triggered

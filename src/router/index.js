@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -24,6 +24,13 @@ const router = createRouter({
       component: () => import('@/views/ContactView.vue'),
     },
   ],
-})
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition;
+    } else {
+      return { top: 0 };
+    }
+  },
+});
 
-export default router
+export default router;
