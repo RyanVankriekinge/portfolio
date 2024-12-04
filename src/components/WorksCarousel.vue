@@ -1,37 +1,33 @@
 <script setup>
 import 'vue3-carousel/dist/carousel.css';
 import { Carousel, Slide, Navigation } from 'vue3-carousel';
+import prototypeFlashQuiz from '../assets/img/prototypeFlashQuiz.png';
+
 
 const items = [
  {
     type: 'image',
-    media: '../assets/img/prototypeFlashQuiz.png',
+    media: prototypeFlashQuiz,
     title: 'Flashquiz',
     description: 'An app that allows users to host or play quizzes instantly.',
   },
   {
     type: 'image',
-    media: '../assets/img/prototypeFlashQuiz.png',
+    media: prototypeFlashQuiz,
     title: 'Flashquiz',
     description: 'An app that allows users to host or play quizzes instantly.',
   },
   {
     type: 'image',
-    media: 'https://via.placeholder.com/300x200?text=Image+2',
-    title: 'Image 2',
-    description: 'This is a description for the second image.',
-  },
-  {
-    type: 'video',
-    media: 'https://www.w3schools.com/html/mov_bbb.mp4',
-    title: 'Video 2',
-    description: 'This is a description for the second video.',
+    media: prototypeFlashQuiz,
+    title: 'Flashquiz',
+    description: 'An app that allows users to host or play quizzes instantly.',
   },
   {
     type: 'image',
-    media: 'https://via.placeholder.com/300x200?text=Image+3',
-    title: 'Image 3',
-    description: 'This is a description for the third image.',
+    media: prototypeFlashQuiz,
+    title: 'Flashquiz',
+    description: 'An app that allows users to host or play quizzes instantly.',
   },
 ];
 
