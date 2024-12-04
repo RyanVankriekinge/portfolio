@@ -1,51 +1,58 @@
 <script setup>
 import 'vue3-carousel/dist/carousel.css';
 import { Carousel, Slide, Navigation } from 'vue3-carousel';
+import prototypeFlashQuiz from '../assets/img/prototypeFlashQuiz.png';
+import prototypeSharedBites from '../assets/img/prototypeSharedBites.jpeg';
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
 
 const items = [
-  {
-    type: 'image', 
-    media: 'https://via.placeholder.com/300x200?text=Image+1',
-    title: 'Image 1',
-    description: 'This is a description for the first image.',
-  },
-  {
-    type: 'video',
-    media: 'https://www.w3schools.com/html/mov_bbb.mp4',
-    title: 'Video 1',
-    description: 'This is a description for the first video.',
+ {
+    type: 'image',
+    media: prototypeFlashQuiz,
+    title: 'FlashQuiz',
+    description: 'An app that allows users to host or play pre-made quizzes instantly.',
+    route: '/flashquiz',
   },
   {
     type: 'image',
-    media: 'https://via.placeholder.com/300x200?text=Image+2',
-    title: 'Image 2',
-    description: 'This is a description for the second image.',
-  },
-  {
-    type: 'video',
-    media: 'https://www.w3schools.com/html/mov_bbb.mp4',
-    title: 'Video 2',
-    description: 'This is a description for the second video.',
+    media: prototypeSharedBites,
+    title: 'SharedBites',
+    description: 'A recipe sharing website specifically designed to cook and share quick recipes.',
+    route: '/sharedbites',
   },
   {
     type: 'image',
-    media: 'https://via.placeholder.com/300x200?text=Image+3',
-    title: 'Image 3',
-    description: 'This is a description for the third image.',
+    media: prototypeFlashQuiz,
+    title: 'GSAP animations',
+    description: 'A prototype that researched the use of animations with text and shapes on a responsive website.',
+    route: '/gsap-animations',
+  },
+  {
+    type: 'image',
+    media: prototypeFlashQuiz,
+    title: 'Page speed improvement',
+    description: 'Maximising web page speed based on the 3 core web vitals: CLS, LCP and INP',
+    route: '/page-speed',
   },
 ];
 
 const config = {
-  itemsToShow: 1.5,
+  itemsToShow: 1,
   wrapAround: true,
   centerMode: true,
+};
+
+const navigateToItem = (route) => {
+  router.push(route);
 };
 </script>
 
 <template>
   <Carousel v-bind="config">
     <Slide v-for="(item, index) in items" :key="index">
-      <div class="carousel__item">
+      <div class="carousel__item" @click="navigateToItem(item.route)">
         <div class="media">
           <img v-if="item.type === 'image'" :src="item.media" :alt="item.title" />
           <video v-else-if="item.type === 'video'" :src="item.media" controls />
@@ -69,6 +76,11 @@ const config = {
   justify-content: center;
   align-items: center;
   padding: 10px;
+  cursor: pointer;
+}
+
+.carousel__item:hover {
+  opacity: 0.8;
 }
 
 .media {

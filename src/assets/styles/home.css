@@ -85,6 +85,8 @@ svg {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 60vh;
+  margin-bottom: 20vh;
 }
 
 .about-me-image-group {
@@ -129,6 +131,7 @@ svg {
   flex-direction: column;
   width: 100%;
   margin-top: 60px;
+  margin-bottom: 20vh;
 }
 
 .section-works *{
