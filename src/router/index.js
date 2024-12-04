@@ -26,22 +26,22 @@ const router = createRouter({
     {
       path: '/page-speed',
       name: 'page-speed',
-      component: () => import('@/views/PageSpeedView.vue'),
+      component: () => import('@/views/works/PageSpeedView.vue'),
     },
     {
       path: '/flashquiz',
       name: 'flashquiz',
-      component: () => import('@/views/FlashQuizView.vue'),
+      component: () => import('@/views/works/FlashQuizView.vue'),
     },
     {
       path: '/sharedbites',
       name: 'sharedbites',
-      component: () => import('@/views/SharedBitesView.vue'),
+      component: () => import('@/views/works/SharedBitesView.vue'),
     },
     {
       path: '/gsap-animations',
       name: 'gsap-animations',
-      component: () => import('@/views/GsapAnimationsView.vue'),
+      component: () => import('@/views/works/GsapAnimationsView.vue'),
     },
   ],
   scrollBehavior(to, from, savedPosition) {

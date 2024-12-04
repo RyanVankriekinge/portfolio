@@ -44,18 +44,18 @@ header {
 
 h2 {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 h3{
   font-family: 'Agency FB', sans-serif;
-  font-size: 25px;
+  font-size: 30px;
   color: #B9A2CE;
 }
 
 p {
-  font-size: 16px;
-  font-family: 'Agency FB', sans-serif;
+  font-size: 14px;
+  font-family:  sans-serif;
   text-align: center;
 }
 

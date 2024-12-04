@@ -14,7 +14,7 @@ export default {
       <div class="wrapper">
         <div class="works-title-container">
           <div class="works-title-shape"></div>
-          <h2>Works</h2>
+          <h2 class="title">Works</h2>
         </div>
         <div class="works-list">
           <div class="work-container" @click="goToPage('/flashquiz')">
@@ -62,7 +62,6 @@ export default {
 }
 
 .works-title-container h2{
-  font-size: 50px;
   z-index: 1;
 }
 
@@ -104,6 +103,10 @@ export default {
   text-align: left;
 }
 
+.work-title{
+  font-size: 25px;
+}
+
 @media (min-width: 641px) {
   .work-container{
     width: 45%;
@@ -111,6 +114,9 @@ export default {
   }
   .work-description{
     height: 200px
+  }
+  .title{
+    text-align: left;
   }
 }
 
