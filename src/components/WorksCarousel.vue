@@ -11,29 +11,33 @@ const items = [
     media: prototypeFlashQuiz,
     title: 'FlashQuiz',
     description: 'An app that allows users to host or play pre-made quizzes instantly.',
+    route: '/flashquiz',
   },
   {
     type: 'image',
     media: prototypeSharedBites,
     title: 'SharedBites',
     description: 'A recipe sharing website specifically designed to cook and share quick recipes.',
+    route: '/sharedbites',
   },
   {
     type: 'image',
     media: prototypeFlashQuiz,
     title: 'GSAP animations',
     description: 'A prototype that researched the use of animations with text and shapes on a responsive website.',
+    route: '/gsap-animations',
   },
   {
     type: 'image',
     media: prototypeFlashQuiz,
     title: 'Page speed improvement',
     description: 'Maximising web page speed based on the 3 core web vitals: CLS, LCP and INP',
+    route: '/page-speed',
   },
 ];
 
 const config = {
-  itemsToShow: 1.5,
+  itemsToShow: 1,
   wrapAround: true,
   centerMode: true,
 };
