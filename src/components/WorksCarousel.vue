@@ -70,6 +70,11 @@ const config = {
   justify-content: center;
   align-items: center;
   padding: 10px;
+  cursor: pointer;
+}
+
+.carousel__item:hover {
+  opacity: 0.8;
 }
 
 .media {
