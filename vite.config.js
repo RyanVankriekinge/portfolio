@@ -5,7 +5,7 @@ import fs from 'fs';
 import { fileURLToPath } from 'url';
 
 export default defineConfig({
-  base: '/',
+  base: '/portfolio/',
   plugins: [
     vue(),
     {
