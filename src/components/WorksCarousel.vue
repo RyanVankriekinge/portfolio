@@ -3,17 +3,17 @@ import 'vue3-carousel/dist/carousel.css';
 import { Carousel, Slide, Navigation } from 'vue3-carousel';
 
 const items = [
-  {
-    type: 'image', 
-    media: 'https://via.placeholder.com/300x200?text=Image+1',
-    title: 'Image 1',
-    description: 'This is a description for the first image.',
+ {
+    type: 'image',
+    media: '../assets/img/prototypeFlashQuiz.png',
+    title: 'Flashquiz',
+    description: 'An app that allows users to host or play quizzes instantly.',
   },
   {
-    type: 'video',
-    media: 'https://www.w3schools.com/html/mov_bbb.mp4',
-    title: 'Video 1',
-    description: 'This is a description for the first video.',
+    type: 'image',
+    media: '../assets/img/prototypeFlashQuiz.png',
+    title: 'Flashquiz',
+    description: 'An app that allows users to host or play quizzes instantly.',
   },
   {
     type: 'image',
