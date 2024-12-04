@@ -16,19 +16,19 @@ const items = [
     type: 'image',
     media: prototypeSharedBites,
     title: 'SharedBites',
-    description: 'An app that allows users to host or play pre-made quizzes instantly.',
+    description: 'A recipe sharing website specifically designed to cook and share quick recipes.',
   },
   {
     type: 'image',
     media: prototypeFlashQuiz,
     title: 'GSAP animations',
-    description: 'An app that allows users to host or play pre-made quizzes instantly.',
+    description: 'A prototype that researched the use of animations with text and shapes on a responsive website.',
   },
   {
     type: 'image',
     media: prototypeFlashQuiz,
     title: 'Page speed improvement',
-    description: 'An app that allows users to host or play pre-made quizzes instantly.',
+    description: 'Maximising web page speed based on the 3 core web vitals: CLS, LCP and INP',
   },
 ];
 
