@@ -1,5 +1,6 @@
 <script>
-import { TypeWriterAnimation } from "@/typeWriterAnimation.js";
+import { onMounted } from "vue";
+import { gsap } from "gsap";
 
 export default {
   methods: {
@@ -8,10 +9,19 @@ export default {
     },
   },
   mounted() {
-    const headings = document.querySelectorAll("h2.typing-animation");
-    if (headings.length > 0) {
-      TypeWriterAnimation(headings);
-    }
+    const workContainers = document.querySelectorAll(".work-container");
+
+    gsap.fromTo(
+      workContainers,
+      { opacity: 0, y: -50 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        stagger: 0.2,
+        ease: "power3.out",
+      }
+    );
   },
 };
 </script>
@@ -88,6 +98,8 @@ export default {
   margin-bottom: 50px;
   height: fit-content;
   height: 350px;
+  opacity: 0; /* Ensure the element starts invisible */
+  transform: translateY(50px); /* Initially offset below */
 }
 
 .work-container:hover {
@@ -134,5 +146,4 @@ export default {
   }
   
 }
-
 </style>
