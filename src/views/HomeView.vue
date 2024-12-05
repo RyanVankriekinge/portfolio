@@ -67,7 +67,7 @@
           <div class="works-container hidden">
             <h2 class="title">My works</h2>
             <WorksCarousel></WorksCarousel>
-            <button class="button-small" @click="navigateToWorks" style="margin: auto; width: 140px;">All my works</button>
+            <button class="button-small" @click="navigateToWorks" style="margin: auto;">All my works</button>
           </div>
         </div>
       </div>

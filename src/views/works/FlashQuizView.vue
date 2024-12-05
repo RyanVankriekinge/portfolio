@@ -72,7 +72,8 @@
 }
 
 li{
-    font-family: sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
     font-size: 14px;
     color: white;
 }
