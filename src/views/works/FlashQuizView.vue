@@ -30,7 +30,10 @@
                     <img src="../../assets/img/prototypeFlashQuiz/flashquizdesignxd.png">
                 </div>
                 <div class="section">
-                    
+                    <h2 class="prototype-title title">Back-end</h2>
+                    <h3>Classes</h3>
+                    <h3>WebSockets</h3>
+
                 </div>
             </div>
         </div>
@@ -84,6 +87,8 @@ h2{
 
 h3{
     text-align: left;
+    width: 100%;
+    margin-top: 20px;
 }
 
 @media (max-width: 1024px){

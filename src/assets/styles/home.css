@@ -149,6 +149,10 @@ svg {
   text-align: center !important;
 }
 
+.works-container p{
+  min-height: fit-content;
+}
+
 @media (min-width: 375px) {
   .name-svg {
     height: 85%;

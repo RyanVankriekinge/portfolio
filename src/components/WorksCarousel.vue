@@ -12,7 +12,7 @@ const items = [
     type: 'image',
     media: prototypeFlashQuiz,
     title: 'FlashQuiz',
-    description: 'An app that allows users to host or play pre-made quizzes instantly.',
+    description: 'A full-stack application that allows users to host or play pre-made quizzes instantly.',
     route: '/flashquiz',
   },
   {
