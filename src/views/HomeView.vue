@@ -54,7 +54,14 @@
               audience. With my drive and eagerness to learn, I am convinced that I can be a
               valuable addition to any team.
             </p>
-            <button class="button-small" @click="navigateToAbout">More about me</button>
+            <button
+              class="button-small"
+              @click="navigateToAbout"
+              @mouseenter="animateIn"
+              @mouseleave="animateOut"
+            >
+              More about me
+            </button>
           </div>
           <div class="about-me-image-group">
             <div class="about-me-image-container">
@@ -67,7 +74,12 @@
           <div class="works-container hidden">
             <h2 class="title typing-animation">My works</h2>
             <WorksCarousel></WorksCarousel>
-            <button class="button-small" @click="navigateToWorks" style="margin: auto;">All my works</button>
+            <button 
+            class="button-small" 
+            @click="navigateToWorks" 
+            @mouseenter="animateIn"
+            @mouseleave="animateOut"
+            style="margin: auto;">All my works</button>
           </div>
         </div>
       </div>
@@ -75,13 +87,16 @@
   </main>
 </template>
 
+
 <script setup>
 import { onMounted, defineAsyncComponent } from 'vue';
 import { useRouter } from 'vue-router';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { buttonHoverAnimation } from '@/buttonAnimation';
 
 const router = useRouter();
+const { animateIn, animateOut } = buttonHoverAnimation();
 
 const debounce = (func, delay) => {
   let timeout;
