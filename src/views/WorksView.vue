@@ -1,11 +1,19 @@
 <script>
+import { TypeWriterAnimation } from "@/typeWriterAnimation.js";
+
 export default {
   methods: {
     goToPage(path) {
       this.$router.push(path);
+    },
+  },
+  mounted() {
+    const headings = document.querySelectorAll("h2.typing-animation");
+    if (headings.length > 0) {
+      TypeWriterAnimation(headings);
     }
-  }
-}
+  },
+};
 </script>
 
 <template>
@@ -14,7 +22,7 @@ export default {
       <div class="wrapper">
         <div class="works-title-container">
           <div class="works-title-shape"></div>
-          <h2 class="title">Works</h2>
+          <h2 class="title typing-animation">Works</h2>
         </div>
         <div class="works-list">
           <div class="work-container" @click="goToPage('/flashquiz')">

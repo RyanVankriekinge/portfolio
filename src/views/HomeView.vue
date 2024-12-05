@@ -94,6 +94,7 @@ import { useRouter } from 'vue-router';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { buttonHoverAnimation } from '@/buttonAnimation';
+import { TypeWriterAnimation } from "@/typeWriterAnimation.js";
 
 const router = useRouter();
 const { animateIn, animateOut } = buttonHoverAnimation();
@@ -194,5 +195,9 @@ onMounted(async () => {
   await loadPrimaryAnimations();
   revealHiddenItemsAfterLoading();
   deferAnimations();
+  const headings = document.querySelectorAll("h2.typing-animation");
+  if (headings.length > 0) {
+    TypeWriterAnimation(headings);
+  }
 });
 </script>

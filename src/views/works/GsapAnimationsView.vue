@@ -1,37 +1,20 @@
-<script >
-import { gsap } from "gsap";
-import { TextPlugin } from "gsap/TextPlugin";
+<script setup>
+import { onMounted } from 'vue';
+import { TypeWriterAnimation } from "@/typeWriterAnimation.js";
 
-gsap.registerPlugin(TextPlugin);
-
-export default {
-  name: "TypewriterEffect",
-  mounted() {
-    // Select all <h2> elements
-    const headings = this.$el.querySelectorAll("h2");
-
-    // Iterate over each <h2> and apply GSAP animation
-    headings.forEach((heading, index) => {
-      const text = heading.textContent; // Save the original text
-      heading.textContent = ""; // Clear the content initially
-
-      // Apply GSAP typewriter animation
-      gsap.to(heading, {
-        text: text, // Type out the original text
-        duration: text.length * 0.1, // Adjust typing duration dynamically
-        ease: "none",
-        delay: index * 0.5, // Stagger animations for each heading
-      });
-    });
-  },
-};
+onMounted(() => {
+  const headings = document.querySelectorAll("h2.typing-animation");
+  if (headings.length > 0) {
+    TypeWriterAnimation(headings);
+  }
+});
 </script>
 <template>
   <main>
       <div class="outer-wrapper">
           <div class="wrapper">
               <div class="section">
-                  <h2 class="prototype-title title">Dynamic transitions</h2>
+                  <h2 class="prototype-title title typing-animation">Dynamic transitions</h2>
                   <div class="column">
                       <p>FlashQuiz is a quiz app that allows users to create, host and play quizzes instantly.</p><br>
                       <p style="display: inline;">Link to git repo:</p>
@@ -56,7 +39,7 @@ export default {
                   </div>
               </div>
               <div class="section">
-                  <h2 class="prototype-title title">Process: Design</h2>
+                  <h2 class="prototype-title title typing-animation">Process: Design</h2>
                   <h3 class="image-title first-title">My personal style</h3>
                   <p></p>
               </div>

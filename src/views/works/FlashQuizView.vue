@@ -1,3 +1,45 @@
+<script setup>
+import { gsap } from 'gsap';
+import { onMounted } from 'vue';
+import { TypeWriterAnimation } from "@/typeWriterAnimation.js";
+
+
+onMounted(() => {
+    const animateOnScroll = (entries, observer) => {
+        entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            gsap.to(entry.target, {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            ease: 'power3.out',
+            });
+            observer.unobserve(entry.target);
+        }
+        });
+    };
+
+  const observer = new IntersectionObserver(animateOnScroll, {
+    threshold: 0.2,
+  });
+
+  const sections = document.querySelectorAll('.section');
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+
+  const images = document.querySelectorAll('.section img');
+  images.forEach(image => {
+    observer.observe(image);
+  });
+
+  const headings = document.querySelectorAll("h2.typing-animation");
+  if (headings.length > 0) {
+    TypeWriterAnimation(headings);
+  }
+});
+</script>
+
 <template>
     <main>
         <div class="outer-wrapper">
@@ -49,7 +91,7 @@
                 </div>
                 <div class="section">
                     <div class="column">
-                        <h2 class="prototype-title title">Process: Development</h2>
+                        <h2 class="prototype-title title typing-animation">Process: Development</h2>
                         <h3>Classes</h3>
                         <p>I created a class diagram (UML) in draw.io and made sure to include all the important classes that are needed to allow
                             users to create an account, quizzes with questions and lobbies. 
@@ -158,6 +200,16 @@ h3{
     margin-top: 20px;
 }
 
+.section {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.section img {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
 @media (max-width: 1024px){
     .column{
         margin-bottom: 50px;
@@ -175,5 +227,4 @@ h3{
         width: 45%;
     }
 }
-    
 </style>
