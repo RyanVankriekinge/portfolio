@@ -21,7 +21,7 @@ export default {
             <img src="../assets/img/prototypeFlashQuiz.png" alt="FlashQuiz">
             <div class="work-text-area">
               <h3 class="work-title">FlashQuiz</h3>
-              <p class="work-description">An app that allows users to host or play pre-made quizzes instantly.</p>
+              <p class="work-description">A full-stack web app that allows users to host or play pre-made quizzes instantly.</p>
             </div>
           </div>
 
