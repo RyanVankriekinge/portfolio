@@ -36,7 +36,7 @@
         </div>
         <div class="section-about-me hidden">
           <div class="about-me-description">
-            <h2 class="title">About me</h2>
+            <h2 class="title typing-animation">About me</h2>
             <p>
               Ever since I was a child, I have been passionate about content creation and multimedia
               tools. When I was 9, I made my first edited videos and created blogs and websites for
@@ -65,7 +65,7 @@
         </div>
         <div class="section-works">
           <div class="works-container hidden">
-            <h2 class="title">My works</h2>
+            <h2 class="title typing-animation">My works</h2>
             <WorksCarousel></WorksCarousel>
             <button class="button-small" @click="navigateToWorks" style="margin: auto;">All my works</button>
           </div>

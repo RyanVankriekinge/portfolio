@@ -3,7 +3,7 @@
         <div class="outer-wrapper">
             <div class="wrapper">
                 <div class="section">
-                    <h2 class="prototype-title title">FlashQuiz</h2>
+                    <h2 class="prototype-title title typing-animation">FlashQuiz</h2>
                     <div class="column">
                         <p>FlashQuiz is a quiz app that allows users to create, host and play quizzes instantly.</p><br>
                         <p style="display: inline;">Link to git repo:</p>
@@ -19,7 +19,7 @@
                         <h3>Used technologies:</h3>
                         <p>Design and front-end:</p>
                         <ul>
-                            <li>Adobe XD: Designing my application visually before developping it</li>
+                            <li>Adobe XD: Designing my application visually before developing it</li>
                             <li>Vue.js: Chosen front-end framework</li>
                         </ul>
                         <p>Back-end:</p>
@@ -34,7 +34,7 @@
                     </div>
                 </div>
                 <div class="section">
-                    <h2 class="prototype-title title">Process: Design</h2>
+                    <h2 class="prototype-title title typing-animation">Process: Design</h2>
                     <h3 class="image-title first-title">Moodboard</h3>
                     <p>Since I wanted to implement many features, I aimed to efficiently and quickly develop a style suitable for a quiz app. To achieve this,
                          I researched other quiz apps and colors typically associated with speed (as the app is named "FlashQuiz"). Additionally, 
@@ -73,7 +73,7 @@
                     </div>
                 </div>
                 <div class="section">
-                    <h2 class="prototype-title title">Reflection and next steps</h2>
+                    <h2 class="prototype-title title typing-animation">Reflection and next steps</h2>
                     <h3>Challenges and solutions</h3>
                     <ol>
                         <li>Underestimated scope: I made this project during a sprint of only 2 weeks, so my goals were quite ambitious. I tried to implement
