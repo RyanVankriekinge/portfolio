@@ -71,7 +71,6 @@ export default {
               <p class="work-description">A prototype that researched the use of animations with text and shapes on a responsive website.</p>
             </div>
           </div>
-
           <div class="work-container" @click="goToPage('/page-speed')">
             <img src="" alt="Page Speed Improvement">
             <div class="work-text-area">
