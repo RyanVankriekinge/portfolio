@@ -121,7 +121,8 @@ onMounted(() => {
                         <br>
                         <p>The home page is designed to efficiently direct to the pages that are used the most often (Time table, line-up and tickets), so 
                             users can easily find these pages when revisiting the website.
-                        </p>
+                        </p><br>
+                        <p>The prototype is interactive, so try navigating through my app to discover how it works!</p>
                     </div>
                 </div>
             </div>
