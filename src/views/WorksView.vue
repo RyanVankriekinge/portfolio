@@ -49,6 +49,13 @@ export default {
               <p class="work-description">A mobile app design created for a fictional alternative music festival.</p>
             </div>
           </div>
+          <div class="work-container" @click="goToPage('/programming-animation')">
+            <img src="../assets/img/prototypeProgrammingAnimation/programmingTitle.webp" alt="Programming animation">
+            <div class="work-text-area">
+              <h3 class="work-title">Programming animation</h3>
+              <p class="work-description">A 2D animation video about programming for children, made in a paper cut stop motion style. </p>
+            </div>
+          </div>
           <div class="work-container" @click="goToPage('/flashquiz')">
             <img src="../assets/img/prototypeFlashQuiz.png" alt="FlashQuiz">
             <div class="work-text-area">
@@ -64,7 +71,6 @@ export default {
               <p class="work-description">A prototype that researched the use of animations with text and shapes on a responsive website.</p>
             </div>
           </div>
-
           <div class="work-container" @click="goToPage('/page-speed')">
             <img src="" alt="Page Speed Improvement">
             <div class="work-text-area">

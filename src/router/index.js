@@ -48,6 +48,11 @@ const router = createRouter({
       name: 'skullfest',
       component: () => import('@/views/works/SkullfestView.vue'),
     },
+    {
+      path: '/programming-animation',
+      name: 'programming-animation',
+      component: () => import('@/views/works/ProgrammingAnimationView.vue'),
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
