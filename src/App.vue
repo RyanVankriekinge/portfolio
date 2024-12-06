@@ -45,7 +45,7 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import { gsap } from 'gsap'
-import HamburgerMenu from './components/HamburgerMenu.vue'
+import HamburgerMenu from './components/HamburgerMenu.vue';
 
 const menuActive = ref(false)
 const globalOverlay = ref({ active: false })

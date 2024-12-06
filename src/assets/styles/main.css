@@ -44,29 +44,31 @@ header {
 
 h2 {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 h3{
-  font-family: 'Agency FB', sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-size: 25px;
   color: #B9A2CE;
 }
 
 p {
-  font-size: 16px;
-  font-family: 'Agency FB', sans-serif;
+  font-size: 14px;
+  font-family: 'Oswald', sans-serif;
   text-align: center;
+  font-weight: 300;
 }
 
 .button-small {
   background-color: #57378b;
   color: white;
-  font-family: 'Agency FB', sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-size: 25px;
   border: none;
   padding: 12px;
-  width: 160px;
+  padding-right: 24px;
+  width: fit-content;
   clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);
   text-align: left;
   display: block;
@@ -81,6 +83,26 @@ p {
 .hidden {
   opacity: 0;
   visibility: hidden;
+}
+
+.typing-animation::after {
+  content: "|";
+  display: inline-block;
+  animation: blink 0.6s step-end infinite;
+  font-weight: 100;
+  transform: scaleX(0.5);
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 640px){
+  .button-small{
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 641px) {

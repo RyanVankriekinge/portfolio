@@ -86,6 +86,7 @@ svg {
   flex-direction: column;
   justify-content: space-between;
   height: 60vh;
+  min-height: fit-content;
   margin-bottom: 20vh;
 }
 
@@ -146,6 +147,10 @@ svg {
 .works-container h2{
   margin: auto;
   text-align: center !important;
+}
+
+.works-container p{
+  min-height: fit-content;
 }
 
 @media (min-width: 375px) {

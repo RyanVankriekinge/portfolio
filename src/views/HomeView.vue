@@ -36,7 +36,7 @@
         </div>
         <div class="section-about-me hidden">
           <div class="about-me-description">
-            <h2 class="title">About me</h2>
+            <h2 class="title typing-animation">About me</h2>
             <p>
               Ever since I was a child, I have been passionate about content creation and multimedia
               tools. When I was 9, I made my first edited videos and created blogs and websites for
@@ -54,7 +54,14 @@
               audience. With my drive and eagerness to learn, I am convinced that I can be a
               valuable addition to any team.
             </p>
-            <button class="button-small" @click="navigateToAbout">More about me</button>
+            <button
+              class="button-small"
+              @click="navigateToAbout"
+              @mouseenter="animateIn"
+              @mouseleave="animateOut"
+            >
+              More about me
+            </button>
           </div>
           <div class="about-me-image-group">
             <div class="about-me-image-container">
@@ -65,9 +72,14 @@
         </div>
         <div class="section-works">
           <div class="works-container hidden">
-            <h2 class="title">My works</h2>
+            <h2 class="title typing-animation">My works</h2>
             <WorksCarousel></WorksCarousel>
-            <button class="button-small" @click="navigateToWorks" style="margin: auto; width: 140px;">All my works</button>
+            <button 
+            class="button-small" 
+            @click="navigateToWorks" 
+            @mouseenter="animateIn"
+            @mouseleave="animateOut"
+            style="margin: auto;">All my works</button>
           </div>
         </div>
       </div>
@@ -75,13 +87,17 @@
   </main>
 </template>
 
+
 <script setup>
 import { onMounted, defineAsyncComponent } from 'vue';
 import { useRouter } from 'vue-router';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { buttonHoverAnimation } from '@/buttonAnimation';
+import { TypeWriterAnimation } from "@/typeWriterAnimation.js";
 
 const router = useRouter();
+const { animateIn, animateOut } = buttonHoverAnimation();
 
 const debounce = (func, delay) => {
   let timeout;
@@ -163,7 +179,7 @@ const deferAnimations = () => {
           trigger: selector,
           start: 'top 90%',
           end: 'top 20%',
-          toggleActions: 'play none none none',
+          toggleActions: 'play none reverse none',
           immediateRender: true,
           onUpdate: throttledUpdate,
         },
@@ -179,5 +195,9 @@ onMounted(async () => {
   await loadPrimaryAnimations();
   revealHiddenItemsAfterLoading();
   deferAnimations();
+  const headings = document.querySelectorAll("h2.typing-animation");
+  if (headings.length > 0) {
+    TypeWriterAnimation(headings);
+  }
 });
 </script>

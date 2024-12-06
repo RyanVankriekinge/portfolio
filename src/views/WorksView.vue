@@ -1,11 +1,29 @@
 <script>
+import { onMounted } from "vue";
+import { gsap } from "gsap";
+
 export default {
   methods: {
     goToPage(path) {
       this.$router.push(path);
-    }
-  }
-}
+    },
+  },
+  mounted() {
+    const workContainers = document.querySelectorAll(".work-container");
+
+    gsap.fromTo(
+      workContainers,
+      { opacity: 0, y: -50 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        stagger: 0.2,
+        ease: "power3.out",
+      }
+    );
+  },
+};
 </script>
 
 <template>
@@ -14,14 +32,14 @@ export default {
       <div class="wrapper">
         <div class="works-title-container">
           <div class="works-title-shape"></div>
-          <h2>Works</h2>
+          <h2 class="title typing-animation">Works</h2>
         </div>
         <div class="works-list">
           <div class="work-container" @click="goToPage('/flashquiz')">
             <img src="../assets/img/prototypeFlashQuiz.png" alt="FlashQuiz">
             <div class="work-text-area">
               <h3 class="work-title">FlashQuiz</h3>
-              <p class="work-description">An app that allows users to host or play pre-made quizzes instantly.</p>
+              <p class="work-description">A full-stack web app that allows users to host or play pre-made quizzes instantly.</p>
             </div>
           </div>
 
@@ -62,7 +80,6 @@ export default {
 }
 
 .works-title-container h2{
-  font-size: 50px;
   z-index: 1;
 }
 
@@ -81,10 +98,12 @@ export default {
   margin-bottom: 50px;
   height: fit-content;
   height: 350px;
+  opacity: 0; /* Ensure the element starts invisible */
+  transform: translateY(50px); /* Initially offset below */
 }
 
 .work-container:hover {
-  opacity: 0.8;
+  opacity: 0.5 !important;
   cursor: pointer;
 }
 
@@ -104,6 +123,10 @@ export default {
   text-align: left;
 }
 
+.work-title{
+  font-size: 25px;
+}
+
 @media (min-width: 641px) {
   .work-container{
     width: 45%;
@@ -111,6 +134,9 @@ export default {
   }
   .work-description{
     height: 200px
+  }
+  .title{
+    text-align: left;
   }
 }
 
@@ -120,5 +146,4 @@ export default {
   }
   
 }
-
 </style>
