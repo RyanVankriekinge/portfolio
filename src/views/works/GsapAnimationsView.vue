@@ -16,10 +16,10 @@ onMounted(() => {
               <div class="section">
                   <h2 class="prototype-title title typing-animation">Dynamic transitions</h2>
                   <div class="column">
-                      <p>FlashQuiz is a quiz app that allows users to create, host and play quizzes instantly.</p><br>
+                      <p>A prototype that researched the use of animations with text and shapes on a responsive website.</p><br>
                       <p style="display: inline;">Link to git repo:</p>
-                      <a href="https://github.com/EHB-MCT/expertlab-pt1-RyanVankriekinge/tree/feat/host-lobby" 
-                      target="_blank" style="color: azure; font-family: 'Oswald', sans-serif; font-size: 14px;">Prototype: FlashQuiz</a>
+                      <a href="https://github.com/EHB-MCT/expertlab-pt2-RyanVankriekinge/" 
+                      target="_blank" style="color: azure; font-family: 'Oswald', sans-serif; font-size: 14px;">Prototype: Dynamic transitions</a>
                       <h3>Goals:</h3>
                       <ul>
                           <li>Create dynamic animations for my portfolio page</li>

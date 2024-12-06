@@ -49,7 +49,7 @@ onMounted(() => {
                     <div class="column">
                         <p>FlashQuiz is a quiz app that allows users to create, host and play quizzes instantly.</p><br>
                         <p style="display: inline;">Link to git repo:</p>
-                        <a href="https://github.com/EHB-MCT/expertlab-pt1-RyanVankriekinge/tree/feat/host-lobby" 
+                        <a href="https://github.com/EHB-MCT/expertlab-pt1-RyanVankriekinge/" 
                         target="_blank" style="color: azure; font-family: 'Oswald', sans-serif; font-size: 14px;">Prototype: FlashQuiz</a>
                         <h3>Goals:</h3>
                         <ul>
