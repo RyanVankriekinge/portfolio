@@ -56,8 +56,8 @@ onMounted(() => {
                         </ul>
                     </div>
                     <div class="column-two-thirds">
-                        <video controls width="100%" height="auo">
-                        <source src="../../assets/videos/programmerenvoorkinderenv2.webm" type="video/webm" style="max-width: 100%">
+                        <video controls width="100%" height="auto"  style="margin-top: 30px !important;">
+                        <source src="../../assets/videos/programmerenvoorkinderenv2.webm" type="video/webm" style="max-width: 100%;">
                         Your browser does not support the video tag.
                         </video>
                     </div>
@@ -105,8 +105,8 @@ onMounted(() => {
                 </div>
                 <div class="section">
                     <h2 class="title  prototype-title typing-animation">End Result</h2>
-                    <video controls width="100%" height="auo">
-                        <source src="../../assets/videos/programmerenvoorkinderenv2.webm" type="video/webm" style="max-width: 100%">
+                    <video controls width="100%" height="auto" style="margin-top: 30px !important;">
+                        <source src="../../assets/videos/programmerenvoorkinderenv2.webm" type="video/webm" style="max-width: 100%;">
                         Your browser does not support the video tag.
                     </video>
                 </div>
