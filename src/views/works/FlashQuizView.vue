@@ -50,7 +50,7 @@ onMounted(() => {
                         <p>FlashQuiz is a quiz app that allows users to create, host and play quizzes instantly.</p><br>
                         <p style="display: inline;">Link to git repo:</p>
                         <a href="https://github.com/EHB-MCT/expertlab-pt1-RyanVankriekinge/" 
-                        target="_blank" style="color: azure; font-family: 'Oswald', sans-serif; font-size: 14px;">Prototype: FlashQuiz</a>
+                        target="_blank" style="color: azure; font-family: 'Oswald', sans-serif; font-size: 16px;">Prototype: FlashQuiz</a>
                         <h3>Goals:</h3>
                         <ul>
                             <li>Develop a quiz app using WebSockets for real-time communication</li>
@@ -115,7 +115,7 @@ onMounted(() => {
                     </div>
                 </div>
                 <div class="section">
-                    <h2 class="prototype-title title typing-animation">Reflection and next steps</h2>
+                    <h2 class="prototype-title title typing-animation">Reflection</h2>
                     <h3>Challenges and solutions</h3>
                     <ol>
                         <li>Underestimated scope: I made this project during a sprint of only 2 weeks, so my goals were quite ambitious. I tried to implement
@@ -181,7 +181,7 @@ onMounted(() => {
 .section li{
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 16px;
     color: white;
     list-style: circle;
 }
