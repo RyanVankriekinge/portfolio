@@ -97,14 +97,14 @@ onMounted(() => {
                             taking a quick look at the time table. To finish everything off, I created a working prototype using Adobe XD.</p>
                     </div>
                     <div class="column-one-third">
-                        <img src="../../assets/img/prototypeSkullfest/stijlgids.webp">
+                        <img src="../../assets/img/prototypeSkullfest/stijlgids.webp" style="max-height: 100vh;">
                     </div>
                 </div>
                 <div class="section">
-                    <div class="column">
+                    <div class="column prototype-bottom">
                         <iframe width="360" height="760" src="https://xd.adobe.com/embed/29ef7323-1b9e-4fba-92aa-a39881e02e68-7cbc/?fullscreen" frameborder="0" allowfullscreen></iframe>
                     </div>
-                    <div class="column">
+                    <div class="column prototype-top">
                         <h2 class="prototype-title title typing-animation">Prototype</h2>
                         <p>To create the prototype for my app, I started by creating a wireframe that focuses on the user experience. Since
                             it's a festival app, users will mostly use it for the following things:
@@ -196,6 +196,12 @@ h3{
 @media (max-width: 1024px){
     .column{
         margin-bottom: 50px;
+    }
+    .prototype-bottom {
+        order: 2;
+    }
+    .prototype-top {
+        order: 1;
     }
 }
 
