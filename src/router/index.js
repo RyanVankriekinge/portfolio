@@ -43,6 +43,11 @@ const router = createRouter({
       name: 'gsap-animations',
       component: () => import('@/views/works/GsapAnimationsView.vue'),
     },
+    {
+      path: '/skullfest',
+      name: 'skullfest',
+      component: () => import('@/views/works/SkullfestView.vue'),
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {

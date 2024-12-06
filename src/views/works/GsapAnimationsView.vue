@@ -19,7 +19,7 @@ onMounted(() => {
                       <p>A prototype that researched the use of animations with text and shapes on a responsive website.</p><br>
                       <p style="display: inline;">Link to git repo:</p>
                       <a href="https://github.com/EHB-MCT/expertlab-pt2-RyanVankriekinge/" 
-                      target="_blank" style="color: azure; font-family: 'Oswald', sans-serif; font-size: 14px;">Prototype: Dynamic transitions</a>
+                      target="_blank" style="color: azure; font-family: 'Oswald', sans-serif; font-size: 16px;">Prototype: Dynamic transitions</a>
                       <h3>Goals:</h3>
                       <ul>
                           <li>Create dynamic animations for my portfolio page</li>
@@ -83,7 +83,7 @@ onMounted(() => {
 .section li{
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   color: white;
   list-style: circle;
 }

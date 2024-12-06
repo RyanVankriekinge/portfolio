@@ -35,19 +35,25 @@ export default {
           <h2 class="title typing-animation">Works</h2>
         </div>
         <div class="works-list">
-          <div class="work-container" @click="goToPage('/flashquiz')">
-            <img src="../assets/img/prototypeFlashQuiz.png" alt="FlashQuiz">
-            <div class="work-text-area">
-              <h3 class="work-title">FlashQuiz</h3>
-              <p class="work-description">A full-stack web app that allows users to host or play pre-made quizzes instantly.</p>
-            </div>
-          </div>
-
           <div class="work-container" @click="goToPage('/sharedbites')">
             <img src="../assets/img/prototypeSharedBites.jpeg" alt="SharedBites">
             <div class="work-text-area">
               <h3 class="work-title">SharedBites</h3>
               <p class="work-description">A recipe sharing website specifically designed to cook and share quick recipes.</p>
+            </div>
+          </div>
+          <div class="work-container" @click="goToPage('/skullfest')">
+            <img src="../assets//img/prototypeSkullfest/prototypeSkullfest.png" alt="Skullfest">
+            <div class="work-text-area">
+              <h3 class="work-title">Skullfest</h3>
+              <p class="work-description">A mobile app design created for a fictional alternative music festival.</p>
+            </div>
+          </div>
+          <div class="work-container" @click="goToPage('/flashquiz')">
+            <img src="../assets/img/prototypeFlashQuiz.png" alt="FlashQuiz">
+            <div class="work-text-area">
+              <h3 class="work-title">FlashQuiz</h3>
+              <p class="work-description">A full-stack web app that allows users to host or play pre-made quizzes instantly.</p>
             </div>
           </div>
 
@@ -98,8 +104,8 @@ export default {
   margin-bottom: 50px;
   height: fit-content;
   height: 350px;
-  opacity: 0; /* Ensure the element starts invisible */
-  transform: translateY(50px); /* Initially offset below */
+  opacity: 0;
+  transform: translateY(50px);
 }
 
 .work-container:hover {
