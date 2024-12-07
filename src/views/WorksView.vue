@@ -81,7 +81,7 @@ export default {
             </div>
             <div class="work-text-area">
               <h3 class="work-title">Animations and transitions</h3>
-              <p class="work-description">A prototype that researched the use of animations with text and shapes on a responsive website.</p>
+              <p class="work-description">Researching the use of animations with text and shapes on a responsive website and using transitions in Vue.js</p>
             </div>
           </div>
           <div class="work-container" @click="goToPage('/page-speed')">
