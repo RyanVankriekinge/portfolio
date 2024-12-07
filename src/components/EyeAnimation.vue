@@ -84,11 +84,12 @@ onMounted(() => {
     }
 
     .eyeball {
-    fill: white;
-    stroke-width: 1;
+    fill: #57378b;
+    stroke-width: 20;
+    stroke: #ffffff;
     }
 
     .pupil {
-    fill: #000;
+    fill: white;
     }
 </style>
