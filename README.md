@@ -100,3 +100,6 @@ To fix formatting issues, run: <br>
 
 19. **Scroll to top on router change in Vue**  
     Used [ChatGPT](https://chatgpt.com/share/6750579c-e654-8002-9ffe-f97d0db8329c) to scroll to the top of the page when a router change is triggered
+
+20. **Creating cursor following animation**  
+    Used [GSAP: Cursor follows the eyes](https://gsap.com/community/forums/topic/17962-cursor-follows-the-eyes/) to create cursor following animation in src > components > EyeAnimation and EyeAnimationNoShape.vue

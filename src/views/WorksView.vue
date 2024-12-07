@@ -1,8 +1,11 @@
 <script>
-import { onMounted } from "vue";
 import { gsap } from "gsap";
+import EyeAnimationNoShape from "@/components/EyeAnimationNoShape.vue";
 
 export default {
+  components: {
+    EyeAnimationNoShape,
+  },
   methods: {
     goToPage(path) {
       this.$router.push(path);
@@ -36,28 +39,36 @@ export default {
         </div>
         <div class="works-list">
           <div class="work-container" @click="goToPage('/sharedbites')">
-            <img src="../assets/img/prototypeSharedBites.jpeg" alt="SharedBites">
+            <div class="media-container">
+              <img src="../assets/img/prototypeSharedBites.jpeg" alt="SharedBites">
+            </div>
             <div class="work-text-area">
               <h3 class="work-title">SharedBites</h3>
               <p class="work-description">A recipe sharing website specifically designed to cook and share quick recipes.</p>
             </div>
           </div>
           <div class="work-container" @click="goToPage('/skullfest')">
-            <img src="../assets//img/prototypeSkullfest/prototypeSkullfest.png" alt="Skullfest">
+            <div class="media-container">
+              <img src="../assets//img/prototypeSkullfest/prototypeSkullfest.png" alt="Skullfest">
+            </div>
             <div class="work-text-area">
               <h3 class="work-title">Skullfest</h3>
               <p class="work-description">A mobile app design created for a fictional alternative music festival.</p>
             </div>
           </div>
           <div class="work-container" @click="goToPage('/programming-animation')">
+            <div class="media-container">
             <img src="../assets/img/prototypeProgrammingAnimation/programmingTitle.webp" alt="Programming animation">
+            </div>
             <div class="work-text-area">
               <h3 class="work-title">Programming animation</h3>
               <p class="work-description">A 2D animation video about programming for children, made in a paper cut stop motion style. </p>
             </div>
           </div>
           <div class="work-container" @click="goToPage('/flashquiz')">
-            <img src="../assets/img/prototypeFlashQuiz.png" alt="FlashQuiz">
+            <div class="media-container">
+              <img src="../assets/img/prototypeFlashQuiz.png" alt="FlashQuiz">
+            </div>
             <div class="work-text-area">
               <h3 class="work-title">FlashQuiz</h3>
               <p class="work-description">A full-stack web app that allows users to host or play pre-made quizzes instantly.</p>
@@ -65,14 +76,18 @@ export default {
           </div>
 
           <div class="work-container" @click="goToPage('/gsap-animations')">
-            <img src="" alt="gsap animations">
+            <div class="media-container eye-container">
+              <EyeAnimationNoShape></EyeAnimationNoShape>
+            </div>
             <div class="work-text-area">
-              <h3 class="work-title">GSAP animations</h3>
-              <p class="work-description">A prototype that researched the use of animations with text and shapes on a responsive website.</p>
+              <h3 class="work-title">Animations and transitions</h3>
+              <p class="work-description">Researching the use of animations with text and shapes on a responsive website and using transitions in Vue.js</p>
             </div>
           </div>
           <div class="work-container" @click="goToPage('/page-speed')">
-            <img src="" alt="Page Speed Improvement">
+            <div class="media-container">
+              <img src="" alt="Page Speed Improvement">
+            </div>
             <div class="work-text-area">
               <h3 class="work-title">Page speed improvement</h3>
               <p class="work-description">Maximising web page speed based on the 3 core web vitals: CLS, LCP and INP.</p>
@@ -124,6 +139,19 @@ export default {
   height: 200px;
   min-height: 200px;
   object-fit: cover;
+}
+
+.media-container{
+  width: 100%;
+  height: 200px;
+  min-height: 200px;
+  overflow: hidden;
+}
+
+.eye-container{
+  height: 200px;
+  width: 80%;
+  margin: 0px auto;
 }
 
 .work-text-area{
