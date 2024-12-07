@@ -61,24 +61,21 @@ onMounted(() => {
 
 <template>
     <svg id="eyeSVG" viewBox="0 0 1000 1000">
-        <polygon id="diamond-shape"
-            points="250,50 850,500 700,950 150,500" 
-            fill="#57378b" />
         <g id="eye-left">
-            <circle class="eyeball" cx="300" cy="500" r="190" />
-            <circle class="pupil" cx="300" cy="500" r="100" />
+            <circle class="eyeball" cx="250" cy="500" r="250" />
+            <circle class="pupil" cx="250" cy="500" r="150" />
         </g>
         <g id="eye-right">
-            <circle class="eyeball" cx="700" cy="500" r="190" />
-            <circle class="pupil" cx="700" cy="500" r="100" />
+            <circle class="eyeball" cx="750" cy="500" r="250" />
+            <circle class="pupil" cx="750" cy="500" r="150" />
         </g>
     </svg>
 </template>
 
 <style scoped>
     svg {
-    width: 100%;
     height: 100%;
+    width: 100%;
     display: block;
     }
 
