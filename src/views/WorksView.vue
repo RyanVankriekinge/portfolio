@@ -80,7 +80,7 @@ export default {
               <EyeAnimationNoShape></EyeAnimationNoShape>
             </div>
             <div class="work-text-area">
-              <h3 class="work-title">GSAP animations</h3>
+              <h3 class="work-title">Animations and transitions</h3>
               <p class="work-description">A prototype that researched the use of animations with text and shapes on a responsive website.</p>
             </div>
           </div>
