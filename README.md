@@ -1,4 +1,4 @@
-# Dynamic Transitions Portfolio
+# Portfolio Ryan Vankriekinge
 
 This project is a personal portfolio that uses web animations and transitions. This project is also used to investigate how to improve the page speed of a web page.
 
