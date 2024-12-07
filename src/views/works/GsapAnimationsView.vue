@@ -15,7 +15,7 @@ onMounted(() => {
       <div class="outer-wrapper">
           <div class="wrapper">
               <div class="section">
-                  <h2 class="prototype-title title typing-animation">Dynamic transitions</h2>
+                  <h2 class="prototype-title title typing-animation">Dynamic animations and transitions</h2>
                   <div class="column">
                       <p>A prototype that researched the use of animations with text and shapes on a responsive website.</p><br>
                       <p style="display: inline;">Link to git repo:</p>

@@ -63,6 +63,9 @@ onMounted(() => {
         <div class="outer-wrapper">
             <div class="wrapper">
                 <svg id="eyeSVG" viewBox="0 0 1000 1000">
+                    <polygon id="diamond-shape"
+                        points="250,50 850,500 700,950 150,500" 
+                        fill="#57378b" />
                     <g id="eye-left">
                         <circle class="eyeball" cx="300" cy="500" r="190" />
                         <circle class="pupil" cx="300" cy="500" r="100" />
@@ -72,7 +75,6 @@ onMounted(() => {
                         <circle class="pupil" cx="700" cy="500" r="100" />
                     </g>
                 </svg>
-
             </div>
         </div>
     </main>
@@ -83,13 +85,19 @@ onMounted(() => {
     height: 100%;
     }
 
+    #diamond-shape{
+        stroke-width: 20px;
+        stroke: white;
+    }
+
     .eyeball {
-    fill: #57378b;
+    fill: #1c1c1b;
+    ;
     stroke-width: 20;
     stroke: #ffffff;
     }
 
     .pupil {
-    fill: white;
+    fill: rgb(255, 255, 255);
     }
 </style>
