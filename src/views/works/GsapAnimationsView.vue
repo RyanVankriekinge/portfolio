@@ -1,6 +1,7 @@
 <script setup>
 import { onMounted } from 'vue';
 import { TypeWriterAnimation } from "@/typeWriterAnimation.js";
+import EyeAnimation from "@/components/EyeAnimation.vue";
 
 onMounted(() => {
   const headings = document.querySelectorAll("h2.typing-animation");
@@ -35,7 +36,7 @@ onMounted(() => {
                       </ul>
                   </div>
                   <div class="column">
-                      <img class="work-top-image" src="../../assets/img/prototypeFlashQuiz.png">
+                      <EyeAnimation></EyeAnimation>
                   </div>
               </div>
               <div class="section">
