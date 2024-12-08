@@ -2,6 +2,8 @@
 import 'vue3-carousel/dist/carousel.css';
 import { Carousel, Slide, Navigation } from 'vue3-carousel';
 import prototypeFlashQuiz from '../assets/img/prototypeFlashQuiz.png';
+import prototypeSkullfest from '../assets/img/prototypeSkullfest/prototypeSkullfest.png';
+import prototypeProgrammingAnimation from '../assets/videos/programmerenvoorkinderenv2.webm';
 import prototypeSharedBites from '../assets/img/prototypeSharedBites.jpeg';
 import { useRouter } from 'vue-router';
 
@@ -10,10 +12,10 @@ const router = useRouter();
 const items = [
  {
     type: 'image',
-    media: prototypeFlashQuiz,
-    title: 'FlashQuiz',
-    description: 'A full-stack application that allows users to host or play pre-made quizzes instantly.',
-    route: '/flashquiz',
+    media: prototypeSkullfest,
+    title: 'Skullfest',
+    description: 'A mobile app designed for a fictional alternative music festival.',
+    route: '/skullfest',
   },
   {
     type: 'image',
@@ -23,18 +25,18 @@ const items = [
     route: '/sharedbites',
   },
   {
-    type: 'image',
-    media: prototypeFlashQuiz,
-    title: 'GSAP animations',
-    description: 'A prototype that researched the use of animations with text and shapes on a responsive website.',
-    route: '/gsap-animations',
+    type: 'video',
+    media: prototypeProgrammingAnimation,
+    title: 'Programming for children',
+    description: 'A 2D animaton about programming for children, made in paper cut stop motion style.',
+    route: '/programming-animation',
   },
   {
     type: 'image',
     media: prototypeFlashQuiz,
-    title: 'Page speed improvement',
-    description: 'Maximising web page speed based on the 3 core web vitals: CLS, LCP and INP',
-    route: '/page-speed',
+    title: 'FlashQuiz',
+    description: 'A full-stack application that allows users to host or play pre-made quizzes instantly.',
+    route: '/flashquiz',
   },
 ];
 

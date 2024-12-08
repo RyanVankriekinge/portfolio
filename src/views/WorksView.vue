@@ -86,7 +86,6 @@ export default {
           </div>
           <div class="work-container" @click="goToPage('/page-speed')">
             <div class="media-container">
-              <img src="" alt="Page Speed Improvement">
             </div>
             <div class="work-text-area">
               <h3 class="work-title">Page speed improvement</h3>
