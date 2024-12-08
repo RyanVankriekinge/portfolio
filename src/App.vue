@@ -15,9 +15,7 @@
           </transition>
           <ul class="desktop-nav">
             <li><RouterLink to="/">Home</RouterLink></li>
-            <li><RouterLink to="/about">More About Me</RouterLink></li>
             <li><RouterLink to="/works">My Works</RouterLink></li>
-            <li><RouterLink to="/contact">Contact</RouterLink></li>
           </ul>
         </nav>
       </div>
