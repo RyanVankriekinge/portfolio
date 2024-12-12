@@ -1,4 +1,4 @@
-import{l as ue,m as s,n as A,p as P,q as _,o as Ee,s as Le,t as ze,w as ne,v as we,x,y as m,F as Ae,j as Pe,h as Re,f as W,z as je,A as oe,e as xe,u as ae,c as ie,B as Be,a as F,C as Ve,D as ye,E as $e,G as Ue}from"./index-B0ON13hr.js";import{p as Fe}from"./prototypeFlashQuiz-DIeuf4D6.js";import{p as Xe}from"./prototypeSkullfest-BCFwd5-v.js";import{p as Ye}from"./programmerenvoorkinderenv2-BWxoYGDK.js";import{p as Ge}from"./prototypeSharedBites-DQscjoGV.js";/**
+import{l as ue,m as s,n as A,p as P,q as _,o as Ee,s as Le,t as ze,w as ne,v as we,x,y as m,F as Ae,j as Pe,h as Re,f as W,z as je,A as oe,e as xe,u as ae,c as ie,B as Be,a as F,C as Ve,D as ye,E as $e,G as Ue}from"./index-K0O77jaj.js";import{p as Fe}from"./prototypeFlashQuiz-DIeuf4D6.js";import{p as Xe}from"./prototypeSkullfest-BCFwd5-v.js";import{p as Ye}from"./programmerenvoorkinderenv2-BWxoYGDK.js";import{p as Ge}from"./prototypeSharedBites-DQscjoGV.js";/**
  * Vue 3 Carousel 0.7.1
  * (c) 2024
  * @license MIT
