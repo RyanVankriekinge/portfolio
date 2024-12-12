@@ -45,38 +45,38 @@ onMounted(() => {
       <div class="outer-wrapper">
           <div class="wrapper">
               <div class="section">
-                  <h2 class="prototype-title title typing-animation">Dynamic animations and transitions</h2>
-                  <div class="column">
-                      <p>A prototype that researched the use of animations with text and shapes on a responsive website.</p><br>
-                      <p style="display: inline;">Link to git repo:</p>
-                      <a href="https://github.com/EHB-MCT/expertlab-pt3-RyanVankriekinge/" 
-                      target="_blank" style="color: azure; font-family: 'Oswald', sans-serif; font-size: 16px;">Prototype: Dynamic transitions</a>
-                      <h3>Goals:</h3>
-                      <ul>
-                          <li>Create dynamic animations for my portfolio page</li>
-                          <li>Learning how to use different js animation libraries and how to choose the appropriate library for each individual project.</li>
-                          <li>Learning how to integrate transitions and animations in a one page Vue application.</li>
-                          <li>Learning how to create and animate shapes and text while keeping the website responsive for all screen sizes.</li>
-                      </ul>
+                <h2 class="prototype-title title typing-animation">Dynamic animations and transitions</h2>
+                <div class="column">
+                    <p>A prototype that researched the use of animations with text and shapes on a responsive website.</p><br>
+                    <p style="display: inline;">Link to git repo:</p>
+                    <a href="https://github.com/EHB-MCT/expertlab-pt3-RyanVankriekinge/" 
+                    target="_blank" style="color: azure; font-family: 'Oswald', sans-serif; font-size: 16px;">Prototype: Dynamic transitions</a>
+                    <h3>Goals:</h3>
+                    <ul>
+                        <li>Create dynamic animations for my portfolio page</li>
+                        <li>Learning how to use different js animation libraries and how to choose the appropriate library for each individual project.</li>
+                        <li>Learning how to integrate transitions and animations in a one page Vue application.</li>
+                        <li>Learning how to create and animate shapes and text while keeping the website responsive for all screen sizes.</li>
+                    </ul>
 
-                      <h3>Used technologies:</h3>
-                      <ul>
-                          <li>Adobe XD: Designing my application visually before developing it</li>
-                          <li>Vue.js: Chosen front-end framework</li>
-                      </ul>
-                  </div>
-                  <div class="column">
-                      <EyeAnimation></EyeAnimation>
-                  </div>
+                    <h3>Used technologies:</h3>
+                    <ul>
+                        <li>Adobe XD: Designing my application visually before developing it</li>
+                        <li>Vue.js: Chosen front-end framework</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <EyeAnimation></EyeAnimation>
+                </div>
               </div>
               <div class="section">
-                  <h2 class="prototype-title title typing-animation">Process: Design</h2>
-                  <p>Since this prototype was the first contribution to my portfolio website, I started by designing this website in Adobe XD. This design
-                    was based on my own personal style guide, which I created earlier for my curriculum vitae.
-                  </p><br>
-                  <p>After designing the page, I started thinking about which animation would look good on each element. I put these in a list and added them
-                    to my planning.
-                  </p>
+                <h2 class="prototype-title title typing-animation">Process: Design</h2>
+                <p>Since this prototype was the first contribution to my portfolio website, I started by designing this website in Adobe XD. This design
+                  was based on my own personal style guide, which I created earlier for my curriculum vitae.
+                </p><br>
+                <p>After designing the page, I started thinking about which animation would look good on each element. I put these in a list and added them
+                  to my planning.
+                </p>
               </div>
               <div class="section">
                 <h2 class="prototype-title title typing-animation">Animations</h2>
