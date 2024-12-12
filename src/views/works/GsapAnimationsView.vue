@@ -1,9 +1,39 @@
 <script setup>
+import { gsap } from 'gsap';
 import { onMounted } from 'vue';
 import { TypeWriterAnimation } from "@/typeWriterAnimation.js";
 import EyeAnimation from "@/components/EyeAnimation.vue";
 
+
 onMounted(() => {
+    const animateOnScroll = (entries, observer) => {
+        entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            gsap.to(entry.target, {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            ease: 'power3.out',
+            });
+            observer.unobserve(entry.target);
+        }
+        });
+    };
+
+  const observer = new IntersectionObserver(animateOnScroll, {
+    threshold: 0.2,
+  });
+
+  const sections = document.querySelectorAll('.section');
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+
+  const images = document.querySelectorAll('.section img');
+  images.forEach(image => {
+    observer.observe(image);
+  });
+
   const headings = document.querySelectorAll("h2.typing-animation");
   if (headings.length > 0) {
     TypeWriterAnimation(headings);

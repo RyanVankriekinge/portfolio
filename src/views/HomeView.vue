@@ -179,7 +179,7 @@ const deferAnimations = () => {
           trigger: selector,
           start: 'top 90%',
           end: 'top 20%',
-          toggleActions: 'play none reverse none',
+          toggleActions: 'play none none none',
           immediateRender: true,
           onUpdate: throttledUpdate,
         },

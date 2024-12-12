@@ -1,5 +1,6 @@
 <script>
 import { gsap } from "gsap";
+import { TypeWriterAnimation } from "@/typeWriterAnimation.js";
 import EyeAnimationNoShape from "@/components/EyeAnimationNoShape.vue";
 
 export default {
@@ -25,6 +26,11 @@ export default {
         ease: "power3.out",
       }
     );
+
+    const headings = document.querySelectorAll("h2.typing-animation");
+    if (headings.length > 0) {
+      TypeWriterAnimation(headings);
+    }
   },
 };
 </script>

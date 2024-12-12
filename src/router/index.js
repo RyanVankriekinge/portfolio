@@ -54,13 +54,12 @@ const router = createRouter({
       component: () => import('@/views/works/ProgrammingAnimationView.vue'),
     },
   ],
-  scrollBehavior(to, from, savedPosition) {
-    if (savedPosition) {
-      return savedPosition;
-    } else {
-      return { top: 0 };
-    }
-  },
+});
+
+router.afterEach((to, from) => {
+  setTimeout(() => {
+    window.scrollTo(0, 0);
+  }, 500);
 });
 
 export default router;
